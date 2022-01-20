@@ -4,7 +4,7 @@ Exam material for POLIMI PhD course Copernicus Uptake 2021
 ## Project Description
 In this project, the Copernicus Atmospheric Monitoring Service ([CAMS](https://atmosphere.copernicus.eu/)) ensemble air quality model estimation are used to compute the impact indicators for vegetation health due to NOX, SO2 and O3 concentrations over Europe. Then, Copernicus [CORINE LAND COVER](https://land.copernicus.eu/pan-european/corine-land-cover) is used to identify natural areas where AQ indicators for vegetation are exceeded.
 
-![ForestO3](./DATA_O3/MAPS/Forest_at_risk.png)
+![ForestO3](./DATA_O3/MAPS/RISK/Forest_at_risk.png)
 >*Exposure to O3 of Forests in Europe*
 
 ## Content of this repository
