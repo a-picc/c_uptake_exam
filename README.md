@@ -24,4 +24,4 @@ This directory contains:
 - Data, boxplot and the map of the NDVI analysis on the forest sample area. Kruskall-Wallis Test resuslt can be found using [NDVI_check.R](./COD_R/NDVI_check.R)
 
 ### DATA_NOx and DATA_SO2
-These directories follow the same structure of **DATA_O3**
+These directories follow the same structure of **DATA_O3**. (Download and processing code, raster and maps)
