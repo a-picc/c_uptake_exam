@@ -21,6 +21,7 @@ This directory contains:
 - The code used to compute the AOT40 starting from the CAMS model output
 - The raster and shapefiles created during the project to map natural areas exposure to poor air quality
 - The maps and the csv results of the analysis
+- Data, boxplot and the map of the NDVI analysis on the forest sample area. Kruskall-Wallis Test resuslt can be found using [NDVI_check.R](./COD_R/NDVI_check.R)
 
 ### DATA_NOx and DATA_SO2
 These directories follow the same structure of **DATA_O3**
