@@ -12,12 +12,12 @@ while($aa <= 2018)
 
   # Converting nc to raste
   echo "********** Coversion to asc raster **********"
-  setenv IODIR /mnt/c/Users/Andrea/Documents/Politecnico/PHD/CORSI/COPERNICUS/PROGETTO/DATI_O3
+  setenv IODIR ../
   setenv INFIL $OUFILE
   setenv OUFIL 03_AOT40_ras_${aa}.asc
   setenv VARPO ""
 
-  Rscript ../COD_R/nc2asc.R
+  Rscript ../../COD_R/nc2asc.R
 
   setenv aa $aa+1
 end

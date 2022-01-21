@@ -4,7 +4,7 @@ library(raster)
 library(fasterize)
 
 sh_in<-st_read("../Europe_coastline_shapefile/Europe_coastline_poly.shp")
-ras_in<-raster("../DATI_O3/O3_AOT40_proj3035_2019_veg.tif")
+ras_in<-raster("../DATA_O3/RASTER/O3_AOT40_proj3035_2019_veg.tif")
 
 ras_out<-raster()
 extent(ras_out)<-extent(ras_in)

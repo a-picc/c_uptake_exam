@@ -1,8 +1,8 @@
 library(ncdf4)
 library(raster)
 
-infile<-"../DATI_O3/ENSa.2018.O3.aot40.nc"
-outfile<-"../DATI_O3/O3_AOT40_proj3035_2018.tif"
+infile<-"../DATA_O3/ENSa.2018.O3.aot40.nc"
+outfile<-"../DATA_O3/O3_AOT40_proj3035_2018.tif"
 sdr<-"+proj=longlat +datum=WGS84 +no_defs"
 var_p<-"AOT40"
 

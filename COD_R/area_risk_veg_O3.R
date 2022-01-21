@@ -1,5 +1,5 @@
 library(tidyverse)
-risk_veg<-read_csv("../DATA_O3/stats_O3_veg.csv")
+risk_veg<-read_csv("../DATA_O3/CSV/stats_O3_veg.csv")
 
 #filter only areas with:
 #Agricolture CLC raster values 12 (211), 13 (212), 14 (213), 18 (231),19 (241), 20 (242), 21 (243) and 22 (244)
@@ -38,4 +38,4 @@ tot_sum<-tot %>% inner_join(exc_lt, by="CLC", suffix=c("_TOTAL","_RISK_LT")) %>%
          RISK_AREA_UE_PER = round((AREA_RISK_UE/AREA_TOTAL)*100,2),
          RISK_AREA_UN_PER = round((AREA_RISK_UN/AREA_TOTAL)*100,2),
          AQ_AREA_PER = round((1-AREA/AREA_TOTAL)*100,2)) %>% select(-AREA) %>% rename_all(~col_n)
-write_csv(tot_sum,"DATI_O3/risk_area_veg.csv")
+write_csv(tot_sum,"../DATA_O3/CSV/risk_area_veg.csv")

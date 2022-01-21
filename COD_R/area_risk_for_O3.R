@@ -1,5 +1,5 @@
 library(tidyverse)
-risk_for<-read_csv("../DATA_O3/stats_O3_for.csv")
+risk_for<-read_csv("../DATA_O3/CSV/stats_O3_for.csv")
 
 #filter only areas with forest: CLC raster values 23 (311 - Broad-leaved forest), 24 (312 - Coniferous forest) and 25 (313 - Mixed forest)
 risk_for<-risk_for %>% filter(CLC %in% c(23, 24, 25)) 
@@ -25,4 +25,4 @@ tot_sum<-tot %>% inner_join(exc, by="CLC", suffix=c("_TOTAL","_RISK")) %>% inner
                          CLC==23 ~ "BROAD-LEAVED",
                          CLC==24 ~ "CONIFEROUS",
                          CLC==25 ~ "MIXED")) %>% select(-AREA) %>% rename_all(~col_n)
-write_csv(tot_sum,"DATI_O3/risk_area_for.csv")
+write_csv(tot_sum,"../DATA_O3/CSV/risk_area_for.csv")

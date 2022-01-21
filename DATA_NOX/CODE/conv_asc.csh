@@ -6,5 +6,5 @@ setenv INFIL "NOX_year_mean.nc"
 setenv OUFIL "NOX_yrlm.asc"
 setenv VARPO "no_conc"
 
-Rscript ../COD_R/nc2asc.R
+Rscript ../../COD_R/nc2asc.R
 

@@ -11,9 +11,9 @@ cdo  timsum -setmisstoc,0 -setvrange,0,1000 -subc,40 -divc,2 $INFILE $OUFILE
 
 # Converting nc to raste
 echo "********** Coversion to asc raster **********"
-setenv IODIR /mnt/c/Users/Andrea/Documents/Politecnico/PHD/CORSI/COPERNICUS/PROGETTO/DATI_O3
+setenv IODIR ../
 setenv INFIL $OUFILE
 setenv OUFIL "03_AOT40_ras_2019_veg.asc"
 setenv VARPO "o3_conc"
 
-Rscript ../COD_R/nc2asc.R
+Rscript ../../COD_R/nc2asc.R
